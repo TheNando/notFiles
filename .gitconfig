@@ -1,0 +1,23 @@
+[url "https://"]
+    insteadOf = git://
+[user]
+	name = Nando Pena
+	email = fernando.pena@rackspace.com
+[push]
+	default = nothing
+[alias]
+    co = checkout
+    bk = checkout -
+    br = branch
+    ci = commit
+    ma = checkout master
+    new = checkout -b
+    pu = pull origin master
+    rem = rebase origin/master
+    st = status -s
+    un = reset HEAD --hard
+    nuke = !git reset --hard && git clean -d -x -f && :
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
