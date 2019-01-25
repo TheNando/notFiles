@@ -1,12 +1,12 @@
 [url "https://"]
     insteadOf = git://
 [user]
-        name = Nando Pena
-        email = fernando.pena@rackspace.com
+    name = Nando Pena
+    email = fernando.pena@rackspace.com
 [push]
-        default = nothing
+    default = nothing
 [alias]
-        ll = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --reverse master^...
+    ll = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --reverse master^...
     bk = checkout -
     br = branch
     cdiff = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $1..$2; }; f"
@@ -22,12 +22,12 @@
     un = reset HEAD --hard
     unignore = update-index --no-assume-unchanged
 [filter "lfs"]
-        clean = git-lfs clean %f
-        smudge = git-lfs smudge %f
-        required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
 [credential]
-        helper = osxkeychain
+    helper = osxkeychain
 [url "https://github.com/"]
-        insteadOf = git://github.com/
+    insteadOf = git://github.com/
 [core]
-        quotepath = false
+    quotepath = false
